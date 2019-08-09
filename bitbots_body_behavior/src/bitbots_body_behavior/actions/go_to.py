@@ -45,6 +45,7 @@ class GoToRelativePosition(AbstractActionElement):
             self.blackboard.pathfinding.publish(pose_msg)
             # TODO: this in good
             # waiting until the robot started to walk
+            # still need feedback from body motors
             rospy.sleep(0.25)
         if not self.blackboard.blackboard.is_currently_walking():
             self.pop()
